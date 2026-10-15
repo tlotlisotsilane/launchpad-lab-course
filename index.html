@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zero to $10K MRR & Launch Your SaaS in 30 Days with AI | Launchpad Lab</title>
+<meta name="description" content="A beginner-friendly, day-by-day course to find a problem, build a simple product with AI, launch it and plan your first 90 days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F2FF;--surface:#FFFFFF;--ink:#17154A;--muted:#4D4B7A;--line:#D9D5F5;--accent:#FF6B35;--accent-ink:#1A0F08;--gold:#FFB703;--teal:#12A594;--sky:#15133D;--sky-ink:#F4F2FF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F0E2E;--surface:#1A1850;--ink:#F4F2FF;--muted:#B9B6E6;--line:#34317A;--teal:#35D6C2;--sky:#0A0922}}
+:root[data-theme="dark"]{--bg:#0F0E2E;--surface:#1A1850;--ink:#F4F2FF;--muted:#B9B6E6;--line:#34317A;--teal:#35D6C2;--sky:#0A0922}
+html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.08;margin:0 0 .5em;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,5vw,2.8rem)}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1080px,100% - 40px);margin:0 auto}
+section{padding:72px 0}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;padding:16px 28px;border-radius:999px;text-decoration:none;font-size:1.05rem;box-shadow:0 8px 0 rgba(0,0,0,.18);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(3px);box-shadow:0 5px 0 rgba(0,0,0,.18)}
+.btn:active{transform:translateY(8px);box-shadow:0 0 0 rgba(0,0,0,.18)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;text-decoration:none;display:flex;align-items:center;gap:8px}
+.brand svg{width:22px;height:22px}
+nav .btn{padding:9px 18px;font-size:.95rem;box-shadow:none}
+/* HERO */
+.hero{background:var(--sky);color:var(--sky-ink);position:relative;overflow:hidden;padding:56px 0 0}
+.hero .wrap{display:grid;gap:12px;grid-template-columns:1.1fr .9fr;align-items:end}
+.hero h1{font-size:clamp(2.3rem,7.2vw,4.4rem);font-weight:800}
+.hero p{color:#CFCBF7;font-size:1.15rem}
+.hero .copy{padding-bottom:64px;position:relative;z-index:2}
+.price-tag{display:inline-flex;align-items:baseline;gap:10px;margin:6px 0 22px}
+.price-tag b{font-family:"Bricolage Grotesque",sans-serif;font-size:2.6rem;color:var(--gold)}
+.price-tag span{color:#CFCBF7}
+.stars circle{fill:#fff;animation:tw 3s ease-in-out infinite}
+.stars circle:nth-child(2n){animation-delay:.8s}.stars circle:nth-child(3n){animation-delay:1.7s}
+@keyframes tw{0%,100%{opacity:.2}50%{opacity:1}}
+.scene{width:100%;height:auto;display:block;align-self:end}
+.rocket{animation:lift 2.6s cubic-bezier(.2,.7,.2,1) both,hover 4s ease-in-out 2.6s infinite;transform-origin:50% 60%}
+@keyframes lift{from{transform:translateY(190px)}to{transform:translateY(0)}}
+@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.flame{animation:fl .18s ease-in-out infinite alternate;transform-origin:50% 0}
+@keyframes fl{from{transform:scaleY(.8)}to{transform:scaleY(1.25)}}
+.smoke{animation:sm 3s ease-out infinite;opacity:0}
+.smoke:nth-of-type(2){animation-delay:1s}.smoke:nth-of-type(3){animation-delay:2s}
+@keyframes sm{0%{opacity:.7;transform:translateY(0) scale(.6)}100%{opacity:0;transform:translateY(60px) scale(1.8)}}
+.coin{animation:fy 5s ease-in-out infinite}.coin:nth-of-type(2){animation-delay:1.2s}.coin:nth-of-type(3){animation-delay:2.4s}
+@keyframes fy{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-16px) rotate(12deg)}}
+/* STAGES */
+.stages{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:32px}
+.stage{background:var(--surface);border:2px solid var(--line);border-radius:22px;padding:24px;position:relative}
+.stage:nth-child(2){border-radius:22px 22px 60px 22px}.stage:nth-child(3){border-radius:60px 22px 22px 22px}
+.stage svg{width:64px;height:64px;margin-bottom:10px}
+.stage small{color:var(--teal);font-weight:700}
+.stage h3{font-size:1.35rem}
+.stage p{color:var(--muted);font-size:.98rem;margin:0}
+.ico-bob{animation:fy 4s ease-in-out infinite}
+/* PHONE */
+.demo{background:var(--surface);border-block:1px solid var(--line)}
+.demo .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+.phone{width:min(260px,100%);margin:0 auto;display:block}
+.bar{transform-origin:0 50%;transform:scaleX(0);transition:transform 1s ease}
+.vis .bar{transform:scaleX(1)}
+.vis .bar:nth-of-type(2){transition-delay:.2s}.vis .bar:nth-of-type(3){transition-delay:.4s}
+.note{color:var(--muted);font-size:.9rem}
+/* GOAL */
+.goal .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.count{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(3rem,10vw,6rem);color:var(--teal);line-height:1}
+.graph{width:100%;height:auto;background:var(--surface);border:2px solid var(--line);border-radius:22px}
+.line{stroke-dasharray:600;stroke-dashoffset:600;transition:stroke-dashoffset 2.2s ease}
+.vis .line{stroke-dashoffset:0}
+.math{display:grid;gap:10px;margin:18px 0;padding:0;list-style:none}
+.math li{background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:12px 16px;font-weight:700}
+/* INSIDE */
+.inside ul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.inside li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:16px}
+.inside li svg{flex:none;width:26px;height:26px}
+/* FOR */
+.for{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.for div{background:var(--surface);border:2px solid var(--line);border-radius:22px;padding:24px}
+.for ul{margin:0;padding-left:1.1em;color:var(--muted)}
+/* PRICE */
+.buy{background:var(--sky);color:var(--sky-ink);text-align:center}
+.card{max-width:520px;margin:28px auto 0;background:var(--surface);color:var(--ink);border-radius:32px;padding:36px 28px;position:relative}
+.card .big{font-family:"Bricolage Grotesque",sans-serif;font-size:4rem;font-weight:800;color:var(--accent)}
+.card ul{text-align:left;list-style:none;padding:0;margin:18px auto 24px;display:grid;gap:8px;max-width:360px}
+.card li::before{content:"\2713";color:var(--teal);font-weight:800;margin-right:10px}
+.buy .btn{box-shadow:0 8px 0 rgba(0,0,0,.25)}
+/* FAQ */
+details{background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;font-size:1.4rem;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:.8em 0 0;color:var(--muted)}
+footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.vis{opacity:1;transform:none}
+@media (max-width:760px){.hero .wrap,.demo .wrap,.goal .wrap{grid-template-columns:1fr}.hero .copy{padding-bottom:12px}.scene{max-width:420px;margin:0 auto}section{padding:56px 0}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal,.bar{opacity:1;transform:none}.line{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c3 2.5 5 6 5 10l-2 3H9l-2-3c0-4 2-7.500 5-10z" fill="#FF6B35"/><circle cx="12" cy="9" r="2" fill="#fff"/></svg>Launchpad Lab</a><a class="btn" href="https://whop.com/launchpad-lab/10k-mrr-club/">Get it for $49</a></div></nav>
+
+<header class="hero" id="top">
+<div class="wrap">
+<div class="copy">
+<h1>Zero to $10K MRR &amp; Launch Your SaaS in 30 Days with AI</h1>
+<p>A day-by-day course for complete beginners. Find a real problem, build a simple product with AI, set your price and launch. No coding. Free tools first.</p>
+<div class="price-tag"><b>$49</b><span>secure checkout on Whop</span></div><br>
+<a class="btn" href="https://whop.com/launchpad-lab/10k-mrr-club/">Start Day 1 today</a>
+</div>
+<svg class="scene" viewBox="0 0 420 460" role="img" aria-label="A rocket lifting off from a launch pad above a glowing phone showing a growing graph">
+<g class="stars"><circle cx="40" cy="50" r="2"/><circle cx="120" cy="20" r="1.6"/><circle cx="330" cy="40" r="2.2"/><circle cx="390" cy="120" r="1.6"/><circle cx="70" cy="160" r="1.8"/><circle cx="250" cy="70" r="1.4"/><circle cx="360" cy="220" r="2"/><circle cx="30" cy="260" r="1.6"/></g>
+<g class="coin"><circle cx="70" cy="300" r="18" fill="#FFB703"/><text x="70" y="307" text-anchor="middle" font-size="20" font-weight="800" fill="#7A4A00">$</text></g>
+<g class="coin"><circle cx="360" cy="330" r="14" fill="#FFB703"/><text x="360" y="336" text-anchor="middle" font-size="16" font-weight="800" fill="#7A4A00">$</text></g>
+<g class="coin"><circle cx="330" cy="150" r="12" fill="#FFB703"/><text x="330" y="155" text-anchor="middle" font-size="14" font-weight="800" fill="#7A4A00">$</text></g>
+<g class="rocket">
+<g class="flame"><path d="M190 300 Q210 400 230 300 Z" fill="#FF6B35"/><path d="M200 300 Q210 360 220 300 Z" fill="#FFD166"/></g>
+<path d="M210 70 C265 120 285 200 275 285 L145 285 C135 200 155 120 210 70Z" fill="#F4F2FF"/>
+<path d="M210 70 C238 95 255 125 262 150 L158 150 C165 125 182 95 210 70Z" fill="#FF6B35"/>
+<circle cx="210" cy="195" r="30" fill="#15133D"/><circle cx="210" cy="195" r="22" fill="#35D6C2"/><circle cx="202" cy="187" r="6" fill="#fff" opacity=".7"/>
+<path d="M145 285 L105 335 L148 315Z M275 285 L315 335 L272 315Z" fill="#FFB703"/>
+<rect x="190" y="285" width="40" height="14" rx="4" fill="#B9B6E6"/>
+</g>
+<circle class="smoke" cx="160" cy="410" r="22" fill="#B9B6E6"/><circle class="smoke" cx="260" cy="410" r="26" fill="#B9B6E6"/><circle class="smoke" cx="210" cy="415" r="20" fill="#B9B6E6"/>
+<rect x="90" y="420" width="240" height="22" rx="8" fill="#34317A"/><rect x="130" y="440" width="160" height="12" rx="4" fill="#1A1850"/>
+</svg>
+</div>
+</header>
+
+<section id="stages"><div class="wrap">
+<h2 class="reveal">Four stages. Thirty days. One launched product.</h2>
+<p class="reveal">Every day has one lesson, one small action, one AI prompt to copy, and a done-check so you always know you are on track.</p>
+<div class="stages">
+<div class="stage reveal"><svg class="ico-bob" viewBox="0 0 64 64" aria-hidden="true"><circle cx="28" cy="28" r="16" fill="none" stroke="#12A594" stroke-width="5"/><path d="M40 40 L56 56" stroke="#FF6B35" stroke-width="6" stroke-linecap="round"/></svg><small>Days 1 to 7</small><h3>Find and validate</h3><p>Hunt for painful problems, pick your niche (B2B or B2C), study competitors, talk to real people and open a waitlist.</p></div>
+<div class="stage reveal"><svg class="ico-bob" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="14" width="48" height="36" rx="6" fill="none" stroke="#12A594" stroke-width="5"/><path d="M22 28 L16 32 L22 36 M42 28 L48 32 L42 36" fill="none" stroke="#FF6B35" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><small>Days 8 to 14</small><h3>Build your MVP</h3><p>Plan the smallest version that works, build it without code, test it and invite your first users.</p></div>
+<div class="stage reveal"><svg class="ico-bob" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="#FFB703"/><text x="32" y="42" text-anchor="middle" font-size="30" font-weight="800" fill="#7A4A00">$</text></svg><small>Days 15 to 21</small><h3>Price, sell, prepare</h3><p>Choose your pricing, set up payments, write your sales page and rehearse your launch with free marketing.</p></div>
+<div class="stage reveal"><svg class="ico-bob" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6c10 8 14 20 12 34H20C18 26 22 14 32 6z" fill="#FF6B35"/><circle cx="32" cy="26" r="5" fill="#fff"/><path d="M20 40l-8 10 10-3M44 40l8 10-10-3" fill="#12A594"/></svg><small>Days 22 to 30</small><h3>Launch and grow</h3><p>Go live, support customers, collect honest feedback and write your 90-day plan toward $10K MRR.</p></div>
+</div>
+<p class="reveal" style="margin-top:24px"><b>Plus Module 5:</b> become the director. Learn to describe your app in plain words and let AI builder tools do the typing.</p>
+</div></section>
+
+<section class="demo" id="demo"><div class="wrap">
+<svg class="phone reveal" viewBox="0 0 260 480" role="img" aria-label="A phone showing a simple reminder app with confirmed and pending appointments">
+<rect x="6" y="6" width="248" height="468" rx="36" fill="#15133D" stroke="#FF6B35" stroke-width="4"/>
+<rect x="22" y="40" width="216" height="400" rx="20" fill="#F4F2FF"/>
+<rect x="100" y="16" width="60" height="10" rx="5" fill="#34317A"/>
+<text x="38" y="78" font-size="16" font-weight="800" fill="#17154A">Tomorrow</text>
+<g class="bars"><rect class="bar" x="38" y="96" width="184" height="54" rx="12" fill="#12A594"/><text x="52" y="128" font-size="13" font-weight="700" fill="#fff">Confirmed</text>
+<rect class="bar" x="38" y="162" width="150" height="54" rx="12" fill="#FFB703"/><text x="52" y="194" font-size="13" font-weight="700" fill="#4A2F00">Reminder sent</text>
+<rect class="bar" x="38" y="228" width="110" height="54" rx="12" fill="#FF6B35"/><text x="52" y="260" font-size="13" font-weight="700" fill="#fff">Needs a nudge</text></g>
+<rect x="38" y="380" width="184" height="42" rx="21" fill="#17154A"/><text x="130" y="407" text-anchor="middle" font-size="14" font-weight="700" fill="#F4F2FF">Send reminders</text>
+</svg>
+<div class="reveal"><h2>See it before you build it</h2>
+<p>You will learn to turn one painful problem into a simple product with one core job. This screen is a fictional teaching example, drawn to show how small a first version can be.</p>
+<p class="note">Example only. It is not a real product or a customer result.</p></div>
+</div></section>
+
+<section class="goal" id="goal"><div class="wrap">
+<div class="reveal"><h2>The math behind the goal</h2>
+<div class="count" id="count" aria-live="off">$10,000</div><p><b>MRR</b> means monthly recurring revenue: the money that repeats every month.</p>
+<ul class="math"><li>100 customers x $100 = $10,000</li><li>200 customers x $50 = $10,000</li><li>400 customers x $25 = $10,000</li></ul>
+<p class="note">A goal, not a promise. Results depend on your niche, price, effort and consistency.</p></div>
+<svg class="graph reveal" viewBox="0 0 400 280" role="img" aria-label="A line chart rising from left to right toward a ten thousand dollar goal">
+<g stroke="#D9D5F5" stroke-width="1"><path d="M30 40H380M30 100H380M30 160H380M30 220H380"/></g>
+<path d="M30 40H380" stroke="#FFB703" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="34" y="32" font-size="12" font-weight="700" fill="#FFB703">$10K goal</text>
+<path class="line" d="M30 230 C90 228 120 215 160 190 S250 120 380 46" fill="none" stroke="#FF6B35" stroke-width="6" stroke-linecap="round"/>
+<circle cx="380" cy="46" r="9" fill="#12A594"/>
+<text x="30" y="260" font-size="12" fill="#4D4B7A">Day 1</text><text x="330" y="260" font-size="12" fill="#4D4B7A">Your plan</text>
+</svg>
+</div></section>
+
+<section class="inside"><div class="wrap">
+<h2 class="reveal">What you get</h2>
+<ul>
+<li class="reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#12A594"/><path d="M7 12l3.500 3.500L17 9" fill="none" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></svg><span>5 modules of step-by-step lessons with full scripts</span></li>
+<li class="reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#12A594"/><path d="M7 12l3.500 3.500L17 9" fill="none" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></svg><span>A copy-and-paste AI prompt in every lesson</span></li>
+<li class="reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#12A594"/><path d="M7 12l3.500 3.500L17 9" fill="none" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></svg><span>A done-check at the end of every day</span></li>
+<li class="reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#12A594"/><path d="M7 12l3.500 3.500L17 9" fill="none" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></svg><span>Handouts, trackers and templates</span></li>
+<li class="reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#12A594"/><path d="M7 12l3.500 3.500L17 9" fill="none" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></svg><span>Beginner-first words and an example for every idea</span></li>
+<li class="reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#12A594"/><path d="M7 12l3.500 3.500L17 9" fill="none" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></svg><span>A 90-day plan for what comes after Day 30</span></li>
+</ul></div></section>
+
+<section><div class="wrap"><h2 class="reveal">Is this for you?</h2>
+<div class="for">
+<div class="reveal"><h3>Great fit if you</h3><ul><li>have never built software</li><li>want recurring income</li><li>work from a phone or laptop</li><li>prefer free tools first</li></ul></div>
+<div class="reveal"><h3>Not a fit if you</h3><ul><li>want guaranteed income</li><li>expect results without effort</li><li>want a done-for-you product</li></ul></div>
+</div></div></section>
+
+<section class="buy" id="buy"><div class="wrap">
+<h2 class="reveal">Your first launch starts here</h2>
+<div class="card reveal"><div class="big">$49</div>
+<ul><li>All 5 modules and lesson scripts</li><li>AI prompts for every lesson</li><li>Handouts and templates</li><li>Done-checks and a 90-day plan</li></ul>
+<a class="btn" href="https://whop.com/launchpad-lab/10k-mrr-club/">Get the course on Whop</a></div>
+</div></section>
+
+<section><div class="wrap"><h2 class="reveal">Questions</h2>
+<details><summary>Do I need to know how to code?</summary><p>No. The course is written for complete beginners and explains every new word.</p></details>
+<details><summary>What tools do I need?</summary><p>A phone or laptop, internet, a free AI assistant, a free Google account and Canva Free. Free plans can change, so check the current limits.</p></details>
+<details><summary>How much time does it take?</summary><p>About 60 to 90 minutes a day for 30 days.</p></details>
+<details><summary>Will I make $10,000 a month?</summary><p>No one can promise that. Results vary with your niche, price, effort and consistency. The course gives you the system and the daily actions.</p></details>
+<details><summary>Can I do it from my phone?</summary><p>Yes. The lessons are designed to work from a phone or a laptop.</p></details>
+</div></section>
+
+<footer><div class="wrap"><b>Launchpad Lab</b><br>Education only. Not financial, legal or tax advice. Results vary and there are no income guarantees.</div></footer>
+
+<script>
+(function(){
+var els=document.querySelectorAll('.reveal,.demo .phone,.goal .graph');
+var cnt=document.getElementById('count'),done=false;
+function run(){if(done||!cnt)return;done=true;var t0=performance.now();(function f(t){var p=Math.min((t-t0)/1800,1);cnt.textContent='$'+Math.round(10000*(1-Math.pow(1-p,3))).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)})(t0)}
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('vis')});return}
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('vis');if(x.target.closest('.goal'))run();io.unobserve(x.target)}})},{threshold:.2});
+els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
